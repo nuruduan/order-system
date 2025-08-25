@@ -26,6 +26,26 @@ A web-based dessert ordering application built with PHP, MySQL, HTML, CSS, and J
 • Database: MySQL
 • Local Server: XAMPP
 
+
+▶️ How to Run the Project
+1. Clone this repository into your htdocs folder in XAMPP:
+git clone https://github.com/your-username/dessert-order.git
+
+2. Import the database:
+   
+2.1) Open phpMyAdmin (http://localhost/phpmyadmin).
+
+2.2) Create a new database (e.g., dessert_order).
+
+2.3) Import the SQL file (found in include folder).
+
+3. Run the project:
+   
+3.1) Start Apache and MySQL from XAMPP Control Panel.
+   
+3.2) Open your browser and visit:
+http://localhost/dessert-order/
+
 📂 Project Structure
 
 dessert-order/
@@ -73,25 +93,6 @@ dessert-order/
 │── checkout.php     # Checkout page
 
 └── README.md        # Documentation
-
-▶️ How to Run the Project
-1. Clone this repository into your htdocs folder in XAMPP:
-git clone https://github.com/your-username/dessert-order.git
-
-2. Import the database:
-   
-2.1) Open phpMyAdmin (http://localhost/phpmyadmin).
-
-2.2) Create a new database (e.g., dessert_order).
-
-2.3) Import the SQL file (found in include folder).
-
-3. Run the project:
-   
-3.1) Start Apache and MySQL from XAMPP Control Panel.
-   
-3.2) Open your browser and visit:
-http://localhost/dessert-order/
 
 📬 Authors
 • Nurul Alya binti Ruduan (Me, main programmer)
