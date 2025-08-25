@@ -1,0 +1,245 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+body {
+  background: white;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+/*.page {
+    background: #e2e2e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}*/
+
+.page {
+    background: #e2e2e5;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    position: absolute;
+    place-content: center;
+    width: calc(100% - 40px);
+  }
+
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 430px;
+  margin: 0 auto;
+  width: 640px;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+  background: linear-gradient(to bottom, #fff, #f4f4f4);
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+.login {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+.right {
+    background: #474A59;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+    position: relative;
+    width: 50%;
+    min-height: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*align-items: flex-start;  /* important: start at top */
+    flex-direction: column;   /* stack children */
+  }
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+svg {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+}
+path {
+  fill: none;
+  /*stroke: url(#linearGradient);*/
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+.form {
+    padding: 0 40px;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  /* CENTER horizontally */
+    box-sizing: border-box;
+    min-height: 100%;
+    width: 100%;
+  }
+
+.form .input-wrapper:first-of-type {
+    margin-top: 50px; /* or more/less */
+}
+
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 14px;
+  /*height: 16px;*/
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  outline: none !important;
+  width: 100%;
+  position: relative; 
+  z-index: 1; 
+}
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 8px;
+    width: 100%;
+    overflow: visible; 
+    max-width: 250px;
+}
+
+.input-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    pointer-events: none;
+    z-index: 0;
+}
+  
+.input-underline path {
+    stroke: url(#linearGradient);
+    stroke-width: 4;
+    fill: none;
+}
+
+input:not(#username)::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  input:not(#username) {
+    border: none;
+    border-bottom: none;
+  }
+  input:not(#username):focus {
+    border-bottom: 5px solid #ff00ff;
+  }
+.submit-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Center vertically */
+    margin-top: 30px;     /* Adjust this if needed */
+    margin-bottom: 30px;  /* Make this same as top */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-height: 600px) {
+    .form {
+      margin: 20px;
+      transform: scale(0.95); /* Shrinks content slightly to fit */
+    }
+  
+    #submit {
+      margin-top: 20px;
+    }
+}
+
+#submit {
+    background-color: #ffffff;
+    color: #474A59;
+    padding: 12px 24px; /* Top/bottom and left/right padding */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    /*margin-top: 20px;*/
+    margin: 0;  
+    transition: background-color 300ms, color 300ms;
+    line-height: normal; /* Optional */
+    min-height: 40px;
+    width: 100%;
+    max-width: none;
+}
+#submit:hover {
+    background-color: #d1d1d1;
+    color: #000000;
+}
+  
+#submit:focus {
+    color: #f2f2f2;
+}
+  
+#submit:active {
+    color: #d0d0d2;
+}
+  

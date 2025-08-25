@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page</title>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/login.css" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+<div class="page">
+  <div class="container">
+    <div class="left">
+      <div class="login">Login</div>
+      <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
+    </div>
+    <div class="right">
+      <svg viewBox="0 0 320 300">
+        <defs>
+          <linearGradient
+            inkscape:collect="always"
+            id="linearGradient"
+            x1="13"
+            y1="193.49992"
+            x2="307"
+            y2="193.49992"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color:#ff00ff;" offset="0" id="stop876" />
+            <stop style="stop-color:#ff0000;" offset="1" id="stop878" />
+          </linearGradient>
+        </defs>
+        <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+      </svg>
+
+      <form action="login.php" method="POST" class="form">
+        <input type="hidden" name="registration" value="login" />
+        <div class="input-wrapper">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+            <svg class="input-underline" viewBox="0 0 100 4" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#f0f" />
+                        <stop offset="100%" stop-color="#f00" />
+                    </linearGradient>
+                </defs>
+                <path d="M 0 2 H 100" stroke="url(#linearGradient)" stroke-width="4" fill="none" />
+            </svg>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+            <svg class="input-underline" viewBox="0 0 100 4" preserveAspectRatio="none">
+                <path d="M 0 2 H 100" stroke="url(#linearGradient)" stroke-width="4" fill="none" />
+            </svg>
+        </div>
+
+        <div class="submit-wrapper">
+            <input type="submit" id="submit" value="Submit" />
+        </div>
+      </form>
+        
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1140px; margin: 20px auto;">
+    <a href="/dessert-order/index.html" class="btn btn-secondary mb-3" style="position: relative; left: 0; margin-left: 20px;">← Back</a>
+</div>
+
+<!-- Js Plugins-->
+<script src="js/login.js"></script>
+</body>
+</html>
