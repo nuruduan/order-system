@@ -29,7 +29,7 @@ A web-based dessert ordering application built with PHP, MySQL, HTML, CSS, and J
 
 ▶️ How to Run the Project
 1. Clone this repository into your htdocs folder in XAMPP:
-git clone https://github.com/your-username/dessert-order.git
+git clone https://github.com/nuruduan/order-system.git
 
 2. Import the database:
    
